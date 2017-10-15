@@ -1,37 +1,31 @@
-# ![Assessment 2][banner]
+# Sup
+[Link to visualisation](https://meesrutten.github.io/fe3-assessment-2/)
+So this is a short description about the project.
+This graphic displays if there were trees in Bob Ross' paintings in Season 1 of his series.
+![Image of my barchart](chart.png)
+***
+## Data
+I used a csv file with information about Bob Ross' paintings
 
-This repository can be forked for [**assessment 2**][a2] of [frontend 3][fe3]
-at [**@CMDA**][cmda].
+***
+## Features
+- d3.scaleBand() - https://github.com/d3/d3-scale#scaleBand
+- d3.scaleLinear() - https://github.com/d3/d3-scale#scaleLinear
+-  d3.axis(left, bottom) - https://github.com/d3/d3-axis#axisLeft - https://github.com/d3/d3-axis#axisBottom
+- bandWidth() - https://github.com/d3/d3-scale#band_bandwidth
+- transition - https://github.com/d3/d3-transition
 
-## TODO
+## Setup
+I used Yeomann Web App generator because I find that it works quite fast for small projects, the setup doesn't have a bunch of clutter and it contains browser-sync which is nice to have.
 
-*   [ ] [GitHub Pages](#github-pages)
-*   [ ] [Metadata](#metadata)
-*   [ ] [Issues](#issues)
-*   [ ] Replace this document in your fork with your own readme!
+## Style
+I made the bars look like trees because that seemed funny to me. I added a transition when you click on the trees and a pop up when you hover over them with the title of that episode.
 
-## GitHub Pages
+## Cleaning data
+I cleaned most of the data with:
+doc.replace( doc.substring( start, end ), '' )
+where doc is the data and start/end are variables
 
-Set up [GitHub Pages][pages] for this fork through the **Settings** pane.  Use
-the **Master branch** as its source.  Do not choose a Jekyll template.
-
-## Metadata
-
-Edit the **description** and **url** of your repository.  Click on edit above
-the green Clone or download button and fill in a correct description and use the
-`github.io` URL you just set up.
-
-## Issues
-
-Enable issues so we can give feedback by going to the settings tab of your fork
-and checking the box next to `issues`.
-
-[banner]: https://cdn.rawgit.com/cmda-fe3/logo/a4b0614/banner-assessment-2.svg
-
-[a2]: https://github.com/cmda-fe3/course-17-18/tree/master/assessment-2#description
-
-[fe3]: https://github.com/cmda-fe3
-
-[cmda]: https://github.com/cmda
-
-[pages]: https://pages.github.com
+***
+### License
+Creative Commons
